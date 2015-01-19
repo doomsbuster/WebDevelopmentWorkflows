@@ -1,0 +1,10 @@
+@mixin background_image($gradient)
+{
+	@debug $gradient;
+	background-image:-webkit- + $gradient;
+	@debug -webkit- + $gradient;
+	background-image:-moz- + $gradient;
+	background-image:-ms- + $gradient;
+	background-image:-o- + $gradient;
+	background-image:$gradient;
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('fonts/BEBAS___-webfont.eot');
+    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(fonts/ss-exlight.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(fonts/ss-light-300.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(fonts/ss-700-bold.woff) format('woff');
+}
+
+$font:Source Sans Pro, Helvetica, Arial, sans-serif, sans-serif;
+$font_weight_200:200;
+$font_weight_300:300;
+$font_weight_700:700;
+$font_bebas:BebasRegular;
+$font_size_50px:3.123em;
+$font_size_30px:(35/16)#{em};
+$font_size_20px:(30/16)#{em};

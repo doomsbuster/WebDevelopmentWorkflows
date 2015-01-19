@@ -1,0 +1,34 @@
+body .slide:nth-child(2n+2) {
+	background-color:$midnightblue;
+}
+
+body .slide:nth-child(2n+3) {
+	background-color:#1abc9c;
+	@include background_image($bg-rightbottom);
+	// background-image: -webkit-linear-gradient(to left top, #4892E2 5%, #1A2846 30%, #17C3EE 5%, #0D90CE 50%);
+	// background-image: -moz-linear-gradient(to left top, #4892E2 5%, #1A2846 30%, #17C3EE 5%, #0D90CE 50%);
+	// background-image: -ms-linear-gradient(to left top, #4892E2 5%, #1A2846 30%, #17C3EE 5%, #0D90CE 50%);
+	// background-image: -o-linear-gradient(to left top, #4892E2 5%, #1A2846 30%, #17C3EE 5%, #0D90CE 50%);
+	// background-image: linear-gradient(to left top, #4892E2 5%, #1A2846 30%, #17C3EE 5%, #0D90CE 50%);
+}
+
+#slide1 {
+	@include background_image($intro_slide_gradient);
+}
+
+.nodejs {
+	background-image: url(http://nodejs.org/images/logos/nodejs-1024x768.png);
+	background-size:600px 150px;
+	background-repeat:no-repeat;
+	background-position: top center;
+}
+
+#footer {
+	background-color:$midnightblue;
+}
+
+@media all and (orientation: portrait) {
+	.nodejs {
+		background-image: none;
+	}
+}

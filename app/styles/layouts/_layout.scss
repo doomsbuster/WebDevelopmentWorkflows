@@ -1,0 +1,144 @@
+
+$full_width:100%;
+$full_height:100%;
+
+@mixin set_height($width,$height) {
+	width:$width;
+	height:$height;
+}
+
+html,body {
+	font-family: $font;
+	@include set_height($full_width,$full_height);
+}
+
+.navigation {
+	position:fixed;
+	z-index:2;
+	top:20px;
+	right: 20px;
+}
+
+.navigation li {
+	display:block;
+	line-height:30px;
+	margin-bottom:2px;
+	-webkit-transition: all .2s ease-in-out;
+	border-bottom:1px solid $white;
+	width:150px;
+}
+
+.slideno {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+
+.slide {
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+	background-color:$midnightblue;
+}
+
+.bullets {
+	padding: (8/16)#{em};
+	margin-left:80px;
+	.items {
+		padding:(8/16)#{em};
+	}
+}
+
+.workflow {
+	width: 80%;
+	height: 100%;
+	margin-left: 80px;
+	margin-top: -5%;
+}
+
+#disqus_thread {
+	padding: 10px;
+}
+
+.wrapper{
+	width:100%;
+	height:300px;
+	position:relative;
+	z-index: 1;
+	margin:0 auto;
+	text-align: center;
+	top:30%;
+	ul {
+		display: inline;
+		vertical-align:middle;
+		list-style: none;
+		@include set_height(100%,300px);
+		margin:0 auto;
+	}
+
+	li {
+		display:inline;
+		vertical-align:middle;
+		@include set_height(300px,300px);
+	}
+
+	img:nth-child(2n+1) {
+		@include set_height(300px,300px);		
+	}
+}
+
+#footer {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	min-height: 5%;
+}
+
+@media all and (orientation: portrait) {
+	.navigation {
+		display:none;
+	}
+	.wrapper{
+		width:100%;
+		height:150px;
+		position:relative;
+		z-index: 1;
+		margin:0 auto;
+		text-align: center;
+		top:25%;
+		ul {
+			display: inline;
+			vertical-align:middle;
+			list-style: none;
+			@include set_height(100%,150px);
+			margin:0 auto;
+		}
+
+		li {
+			display:inline;
+			vertical-align:middle;
+			@include set_height(150px,150px);
+		}
+
+		img:nth-child(2n+1) {
+			@include set_height(150px,150px);		
+		}
+	}
+
+	.bullets {
+		padding:5px;
+		margin-left:40px;
+		.items {
+			padding:5px;
+		}
+	}
+
+	.workflow {
+		width: 80%;
+		height: 100%;
+		margin-left: 40px;
+		margin-top: -5%;
+	}
+}

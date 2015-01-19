@@ -1,0 +1,93 @@
+html, body {
+	color: $white;
+}
+
+.title {
+	font-size:$font_size_50px;
+	padding: (10/16)#{em};
+	font-weight:$font_weight_200;
+}
+
+.sub-title {
+	font-size:$font_size_30px;
+	padding: (5/16)#{em};
+	font-weight:$font_weight_200;
+}
+
+.bullets {
+	.items {
+		font-size: $font_size_30px;
+		font-weight:$font_weight_200;
+		a {
+			color: $white;
+			text-decoration:none;
+			cursor:pointer;
+		}
+		a:hover {
+			-webkit-transform:scale(2);
+			-moz-transform:scale(2);
+			-o-transform:scale(2);
+			-ms-transform:scale(2);
+			transform:scale(2);
+		}
+	}
+}
+
+.navigation {
+    font-family: $font_bebas;
+    color: $white;
+}
+
+.navigation li {
+  font-weight:bold;
+  text-align:left;
+}
+
+.navigation li:hover,.active {
+  font-size:25px;
+  cursor:pointer;
+}
+
+.slideno {
+  font-size:20px;
+  font-weight:bold;
+  color:rgba(255,255,255,0.3);
+  font-family: $font_bebas;
+  cursor:pointer;
+  text-underline:no-underline;
+  text-decoration:none;
+}
+
+#footer {
+	text-align: center;
+	font-weight:$font_weight_200;
+	a {
+		color:$white;
+		text-decoration:none;
+		cursor:pointer;
+		font-weight:$font_weight_300;
+	}
+}
+
+.italics {
+	font-style:italic;
+}
+
+#disqus_thread {
+	color: rgb(123,123,123)
+}
+
+@media all and (orientation: portrait) {  
+	.title {
+		font-size:30px;
+		padding:5px;
+		font-weight:$font_weight_200;
+	}
+
+	.bullets {
+		.items {
+			font-size: 20px;
+			font-weight:$font_weight_200;
+		}
+	}
+}

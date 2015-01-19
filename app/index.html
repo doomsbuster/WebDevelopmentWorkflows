@@ -1,0 +1,225 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Development Workflows</title>
+    <meta name="description" content="The training on the modern web development workflow covers Yeoman, Grunt, Bower and practical applications of these tools to improve your productivity.">
+    <meta name="keywords" content="web development workflow, training, yeoman, grunt, bower, ashish desai">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <ul class="navigation">
+        <li data-slide="1">Home</li>
+        <li data-slide="2">Introduction</li>
+        <li data-slide="3">What is Node.js?</li>
+        <li data-slide="4">The Workflow</li>
+        <li data-slide="5">Yeoman</li>
+        <li data-slide="6">Grunt</li>
+        <li data-slide="7">Bower</li>
+        <li data-slide="8">Other Products</li>
+        <li data-slide="9">Resources</li>
+        <li data-slide="10">Questions</li>
+    </ul>
+    <!-- Main Introduction Slide -->
+    <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+        <a class="button" data-slide="2"></a>
+        <div class="wrapper" data-stellar-ratio="1.5" data-stellar-vertical-offset="50">
+            <ul class="main" >
+                <li id="icon1"><img src="images/yeoman-logo.png" alt="YEOMAN" id="icon_img1"></li>
+                <li id="icon2"><img src="images/grunt-logo.png" alt="GRUNT" id="icon_img2" ></li>
+                <li id="icon3"><img src="images/bower-logo.png" alt="BOWER" id="icon_img3"></li>
+            </ul>
+            <h1 class="title">Web Development Workflows</h1>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+    </div>
+    <!-- Who Am I Slide -->
+    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+        <div id="content" data-stellar-ratio="1.5">
+            <h1 class="title">Who Am I?</h1>
+            <ul class="bullets">
+                <li class="items">Work in Chase Wealth Mangement Technology.</li>
+                <li class="items">8+ years of experience in web platform and web technologies.</li>
+                <li class="items">Expertise in building high performance desktop &amp; mobile apps.</li>
+                <li class="items">Hands-on web performance tuning.</li>
+                <li class="items">Expertise in HTML5, JavaScript, CSS3, Flex and ActionScript.</li>
+                <li class="items">Spend spare time in Animation and Cartooning.</li>
+            </ul>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="3" title=""></a>
+    </div>
+    <!-- What is Node.JS? -->
+    <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.3">
+        <div id="content" class="content nodejs" data-stellar-ratio="1.5" data-stellar-background-ratio="0.3">
+            <h1 class="title">What Is Node.JS?</h1>
+            <ul class="bullets">
+                <li class="items">That makes it all possible!</li>
+                <li class="items">Java Script Virtual Machine (JSVM) - <span class="italics">written in C++ &amp; JavaScript.</span></li>
+                <li class="items">Makes possible command line interface via Node REPL.</li>
+                <li class="items">Provides <span class="italics">http</span> &amp; <span class="italics">process</span> hooks.</li>
+                <li class="items">Based on Google&apos;s V8.</li>
+            </ul>
+            <h1 class="title">NPM - Node Package Manager</h1>
+            <ul class="bullets">
+                <li class="items">Distribution system &amp; package registry.</li>
+                <li class="items">Makes setups &amp; installs a breeze.</li>
+            </ul>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="4" title=""></a>
+    </div>
+    
+    <!-- The Workflow -->
+    <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.3">
+        <div id="content" class="content">
+            <h1 class="title">The Workflow</h1>
+            <img src="images/wkf2.png" alt="web workflow" class="workflow" data-stellar-ratio="0.5"/>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="5" title=""></a>
+    </div>
+    <!-- Yeoman -->
+    <div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.3">
+        <div id="content" class="content" data-stellar-ratio="1.5" data-stellar-background-ratio="0.3">
+            <h1 class="title">Yeoman</h1>
+            <ul class="bullets">
+                <li class="items">Eliminates boiler-plate tasks.</li>
+                <li class="items">Generates (scaffolds) web app structure.</li>
+                <li class="items">Scaffolded structure follows suggested best practices.</li>
+                <li class="items">Roll your own generators.</li>
+                <li class="items">Installable via NPM.</li>
+                <li class="items">Addresses Steps 2 and 3 of the workflow.</li>
+            </ul>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="6" title=""></a>
+    </div>
+    <!-- Grunt -->
+    <div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.3">
+        <div id="content" class="content" data-stellar-ratio="1.5" data-stellar-background-ratio="0.3">
+            <h1 class="title">Grunt</h1>
+            <ul class="bullets">
+                <li class="items">Automation - Heart of this JavaScript Task Runner.</li>
+                <li class="items">Task plugin architecture promotes extensibility.</li>
+                <li class="items">Make mundane tasks automatic - roll your own.</li>
+                <li class="items">Addresses steps 6 through 11 &amp; 13.</li>
+            </ul>
+            <h1 class="sub-title">Notable Plugins</h1>
+            <ul class="bullets">
+                <li class="items">grunt-contrib-livereload</li>
+                <li class="items">grunt-contrib-connect</li>
+                <li class="items">grunt-contrib-watch</li>
+                <li class="items">grunt-autoprefixr</li>
+            </ul>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="7" title=""></a>
+    </div>
+    <!-- Bower -->
+    <div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.3">
+        <div id="content" class="content" data-stellar-ratio="1.5" data-stellar-background-ratio="0.3">
+            <h1 class="title">Bower</h1>
+            <ul class="bullets">
+                <li class="items">Dependency management solution.</li>
+                <li class="items">Allows downloading packages over git.</li>
+                <li class="items">Anything can be a package (assets, JS etc.).</li>
+                <li class="items">Never get left behind latest and greatest!</li>
+                <li class="items">Check <a href="http://semver.org/">semver</a> - updates may bite.</li>
+                <li class="items">Addresses steps 4 and 5 of the dev workflow.</li>
+            </ul>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="8" title=""></a>
+    </div>
+    <!-- Other Less Popular -->
+    <div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.3">
+        <div id="content" class="content" data-stellar-ratio="1.5" data-stellar-background-ratio="0.3">
+            <h1 class="title">Not Very Popular Products</h1>
+            <ul class="bullets">
+                <li class="items"><a href="http://ender.jit.su/">Ender.js</a> - <span class="italics">No-library library</span></li>
+                <li class="items"><a href="http://jamjs.org/">JamJS</a></li>
+                <li class="items"><a href="http://volojs.org/">Volo</a></li>
+                <li class="items"><a href="http://component.io/">Component.io</a></li>
+                <li class="items"><a href="http://bitovi.com/blog/2010/09/stealjs-script-manager.html">StealJS</a></li>
+            </ul>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="9" title=""></a>
+    </div>
+    <!-- Additional Reading-->
+    <div class="slide" id="slide9" data-slide="9" data-stellar-background-ratio="0.3">
+        <div id="content" class="content" data-stellar-ratio="1.5" data-stellar-background-ratio="0.3">
+            <h1 class="title">Additional Resources</h1>
+            <ul class="bullets">
+                <li class="items"><a href="http://www.smashingmagazine.com/2011/06/22/following-a-web-design-process/">http://bit.ly/1iho6Bd</a></li>
+                <li class="items"><a href="http://kenneth.io/blog/2013/05/21/our-web-development-workflow-is-completely-broken/">http://bit.ly/1dOMoPA</a></li>
+                <li class="items"><a href="http://www.adobe.com/devnet/html5/articles/yeoman-at-your-service.html">http://adobe.ly/1mms0pK</a></li>
+                <li class="items"><a href="http://wibblycode.wordpress.com/2013/01/01/the-state-of-javascript-package-management/">http://bit.ly/1jql1ws</a></li>
+                <li class="items"><a href="https://plus.google.com/+PaulIrish/posts/cHLhcSfJyJo">http://bit.ly/1kRK6ET</a></li>
+                <li class="items"><a href="http://yeoman.io/community-generators.html">http://bit.ly/1dS1bZ3</a></li>
+            </ul>
+        </div>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="10" title=""></a>
+    </div>
+    <div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
+        <h1 class="title">Questions?</h1>
+        <a class="slideno" href="http://www.ashishdesai.com">ashishdesai.com</a>
+        <a class="button" data-slide="1" title=""></a>
+    </div>
+    <!-- Disqus Comment Section -->
+    <div id="disqus_thread"></div>
+    
+    <!-- Site Footer -->
+    <footer id="footer" class="font_white_regular font_xsmall">
+        <a href="http://training.ashishdesai.com/wdw">Web Development Workflows</a> by <a href="http://www.ashishdesai.com">Ashish Desai</a> is licensed under WTFPL public license. <a href="http://www.ashishdesai.com">Ashish Desai</a> doesn't care about attribution.
+        <br/>
+        <a href="license.txt" target="_blank">
+            <img
+            src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png" width="80" height="15" alt="WTFPL"/>
+        </a>
+        <br />
+        <p>All logo's appearing on the site may be trademarks of their respective owners.</p>
+    </footer>
+    <!-- Disqus Universal Reload -->
+    <script type="text/javascript">
+    var disqus_shortname = 'workflowtraining'; // Required - Replace example with your forum shortname
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery.stellar/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-waypoints/waypoints.min.js"></script>
+    <script type="text/javascript" src="bower_components/easing/jquery.easing.1.3.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+@import 'partials/reset';
+@import 'modules/utility';
+@import 'partials/colors';
+@import 'partials/fonts';
+@import 'layouts/layout';
+@import 'partials/backgrounds';
+@import 'partials/textformat';
+
+.button {
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-25px;
+	background-color:rgb(51,51,51);
+	background-image:url(../images/arrow.png);
+	border-radius: 50px;
+	border: 3px solid $white_trans_50;
+	z-index:5;
+}
+
+.button:hover {
+	background-color:#494949;
+	cursor:pointer;
+	border-color:#ffffff;
+	border-radius: 50px;
+}
